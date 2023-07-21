@@ -14,7 +14,7 @@ function SlideBar({ isShowMenuMobile, setIsShowMenuMobile }) {
     >
       <ul className="container-tab">
         <div
-          className="button-close"
+          className="button-close "
           onClick={() => setIsShowMenuMobile(!isShowMenuMobile)}
         >
           <img src={close} alt="" />
