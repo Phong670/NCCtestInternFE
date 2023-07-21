@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../asset/logoNCC.png";
 import cssLogo from "../../asset/css-icon.png";
 import htmlLogo from "../../asset/html-icon.png";
 import urlLogo from "../../asset/url-icon.png";
+import menu from "../../asset/open-menu.png";
+
 import Footer from "./Footer";
-function Content() {
+
+function Content({ isShowMenuMobile, setIsShowMenuMobile }) {
   return (
     <div className="main">
       <div className="main-container">
         <div className="logo">
+          <div
+            className="button-menu "
+            onClick={() => setIsShowMenuMobile(!isShowMenuMobile)}
+          >
+            <img src={menu} alt="" />
+          </div>
           <img src={logo} alt="logoImage" />
         </div>
         <div className="text-title">
