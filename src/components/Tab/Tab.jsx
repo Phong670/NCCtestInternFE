@@ -1,21 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function Tab() {
-  const nameTab =['Home','Services','News','Blog','Contact'];
-  var pathArray = window.location.pathname.split('/');
+  const nameTab = ["Home", "Services", "News", "Blog", "Contact"];
+  var pathArray = window.location.pathname.split("/");
   console.log(pathArray[1]);
 
   return (
     <>
-    <div className='container-tab'>
-      {nameTab?.map(name=>(
-          <div className='text-name'><a href={name.toLowerCase()} style={{color:pathArray[1]===name.toLowerCase() ? 'white':'#AAAAAA'}}>{name}</a></div>
-      )
-      )}
-    </div>
-
+      <ul className="container-tab">
+        {nameTab?.map((name) => (
+          <li>
+            <a
+              href={name.toLowerCase()}
+              style={{
+                color:
+                  pathArray[1] === name.toLowerCase() ? "white" : "#AAAAAA",
+              }}
+            >
+              <div className="text-name">
+                <span>{name}</span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
     </>
-  )
+  );
 }
 
-export default Tab
+export default Tab;

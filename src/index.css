@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -5,8 +10,9 @@ html {
 }
 body {
   line-height: 1;
-
   font-family: "Roboto";
+  font-style: normal;
+  line-height: normal;
 }
 
 * {

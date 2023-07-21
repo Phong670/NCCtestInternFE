@@ -9,12 +9,11 @@ function Content() {
     <div className="content">
       <div className="container-main">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logoImage" />
         </div>
         <div className="text-title">
           <strong>Lorem ipsum dolor sit asmet?</strong>
           <p>
-            {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             tristique consequat placerat. Vestibulum auctor pellentesque sem, eu
             posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam
