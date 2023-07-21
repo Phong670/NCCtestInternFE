@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Tab() {
+function SlideBar() {
   const nameTab = ["Home", "Services", "News", "Blog", "Contact"];
   var pathArray = window.location.pathname.split("/");
   console.log(pathArray[1]);
@@ -28,4 +28,4 @@ function Tab() {
   );
 }
 
-export default Tab;
+export default SlideBar;

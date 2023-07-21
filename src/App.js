@@ -1,11 +1,11 @@
 import Content from "./components/Content/Content";
-import Tab from "./components/Tab/Tab";
+import SlideBar from "./components/Tab/SlideBar";
 import "./style.css";
 
 function App() {
   return (
     <div className="app">
-      <Tab />
+      <SlideBar />
       <Content />
     </div>
   );

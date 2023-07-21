@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "./logoNCC.png";
-import cssLogo from "./css-icon.png";
-import htmlLogo from "./html-icon.png";
-import urlLogo from "./url-icon.png";
+import logo from "../../asset/logoNCC.png";
+import cssLogo from "../../asset/css-icon.png";
+import htmlLogo from "../../asset/html-icon.png";
+import urlLogo from "../../asset/url-icon.png";
 import Footer from "./Footer";
 function Content() {
   return (
-    <div className="content">
-      <div className="container-main">
+    <div className="main">
+      <div className="main-container">
         <div className="logo">
           <img src={logo} alt="logoImage" />
         </div>
@@ -25,10 +25,10 @@ function Content() {
             odio neque, sed semper turpis pellentesque a.
           </p>
         </div>
-        <div className="second-text">
-          <div className="text-1">
+        <div className="list-cart-text">
+          <div className="cart-wrap">
             <strong>Lorem ipsum dolor sit amet</strong>
-            <div className="main-content">
+            <div className="cart-content">
               <img src={cssLogo} alt="img" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
@@ -42,9 +42,9 @@ function Content() {
               </p>
             </div>
           </div>
-          <div className="text-1">
+          <div className="cart-wrap">
             <strong>Lorem ipsum dolor sit amet</strong>
-            <div className="main-content">
+            <div className="cart-content">
               <img src={htmlLogo} alt="img" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
@@ -58,9 +58,9 @@ function Content() {
               </p>
             </div>
           </div>
-          <div className="text-1">
+          <div className="cart-wrap">
             <strong>Lorem ipsum dolor sit amet</strong>
-            <div className="main-content">
+            <div className="cart-content">
               <img src={urlLogo} alt="img" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
